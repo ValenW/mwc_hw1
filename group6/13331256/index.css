@@ -2,7 +2,7 @@
 * @Author: ValenW
 * @Date:   2014-10-18 18:31:40
 * @Last Modified by:   ValenW
-* @Last Modified time: 2014-10-26 14:15:51
+* @Last Modified time: 2015-03-25 22:03:02
 */
 
 * {
@@ -23,45 +23,48 @@ ul {
     background-position: center;
     border-radius: 50%;
     position: fixed;
-    margin: auto auto 4em;
+    margin: auto auto 8em;
     bottom: 0;
     left: 0;
     top: 0;
     right: 0;
-    -webkit-transition: 0.7s;
-    -moz-transition: 0.7s;
-    -o-transition: 0.7s;
-    -ms-transition: 0.7s;
+    cursor: pointer;
+    -webkit-transition: 0.5s 0.5s;
+    -moz-transition: 0.5s 0.5s;
+    -o-transition: 0.5s 0.5s;
+    -ms-transition: 0.5s 0.5s;
 }
 #at-plus-container:hover {
     background-image: url("assets/images/atplus_green.png");
     background-color: rgba(48, 63, 159, 1);
     width: 4em;
     height: 4em;
+    margin: auto auto 7em;
     -webkit-transition: 0.7s;
     -moz-transition: 0.7s;
     -o-transition: 0.7s;
     -ms-transition: 0.7s;
 }
 #bottom-positioner {
-    width: 0em;
-    height: 0em;
+    width: 0;
+    height: 0;
     position: absolute;
-    bottom: 1.25em;
-    right: 1.25em;
-    opacity: 0.0;
+    bottom: 50%;
+    right: 50%;
+    opacity: 0;
     -webkit-transition: 0.7s;
     -moz-transition: 0.7s;
     -o-transition: 0.7s;
     -ms-transition: 0.7s;
 }
-#at-plus-container:hover > * {
+#at-plus-container:hover > #bottom-positioner {
+    margin: auto;
     width: 12em;
     height: 12em;
-    position: absolute;
     bottom: -4em;
     right: -4em;
     opacity: 1.0;
+    color: red;
 }
 
 #info-bar {
